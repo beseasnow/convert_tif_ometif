@@ -27,9 +27,9 @@ def write_ome_tif(filename, image, subresolutions = 7, pixelsize = 0.2125):
         metadata={
             'SignificantBits': 8,
             'PhysicalSizeX': pixelsize,
-            'PhysicalSizeXUnit': 'µm',
+            'PhysicalSizeXUnit': 'um',
             'PhysicalSizeY': pixelsize,
-            'PhysicalSizeYUnit': 'µm',
+            'PhysicalSizeYUnit': 'um',
             'Channel': {'Name': ['newname1', 'newname2', 'newname3']} # Use this line to edit channel names for multi-channel images
         }
         options = dict(
